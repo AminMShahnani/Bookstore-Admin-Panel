@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/vazir.css">
+  <title>پنل مدیریت</title>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md p-0 fixed-top">
+    <div class="container mx-5">
+      <button class="navbar-toggler navbar-toggler-right" data-toggle="colapse" data-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="index.html" class="navbar-brand mr-0">
+        <img src="img/favicon (1).ico" width="30" height="30" alt=""> پنل مدیریت
+      </a>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a href="book.html" class="nav-link text-white">کتاب</a>
+          </li>
+          <li class="nav-item">
+            <a href="category.html" class="nav-link text-white">دسته اصلی</a>
+          </li>
+          <li class="nav-item">
+            <a href="sub-category.html" class="nav-link text-white">ژانر</a>
+          </li>
+          <li class="nav-item">
+            <a href="author.html" class="nav-link text-white">نویسندگان</a>
+          </li>
+          <li class="nav-item">
+            <a href="article.html" class="nav-link text-white">انبار</a>
+          </li>
+          <li class="nav-item">
+            <a href="categories.html" class="nav-link text-white">دسته بندی</a>
+          </li>
+          <li class="nav-item">
+            <a href="payment.html" class="nav-link text-white">پیامک</a>
+          </li>
+          <li class="nav-item">
+            <a href="comments.html" class="nav-link text-white">نظرات</a>
+          </li>
+          <li class="nav-item">
+            <a href="template.html" class="nav-link text-white">قالب</a>
+          </li>
+          <li class="nav-item">
+            <a href="template.html" class="nav-link text-white">ارسال</a>
+          </li>
+          <li class="nav-item">
+            <a href="template.html" class="nav-link text-white">تنظیمات</a>
+          </li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-info vazir-font">
+          <i class="fa fa-user"></i> امین شهنانی
+        </button>
+        <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item d-flex" href="settings.html">
+            <i class="fa fa-gear"></i> تنظیمات
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item d-flex" href="profile.html">
+            <i class="fa fa-user"></i> پروفایل
+          </a>
+
+        </div>
+      </div>
+      <a class="btn bg-warning text-white vazir-font mr-1">
+        <i class="fa fa-remove"></i> خروج
+      </a>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid mt-5">
+
+
+
+    <div>
+      <nav class="col-xs-6 col-sm-2 sidebar-offcanvas  d-none d-md-block bg-light  sidebar" id="sidebar">
+        <div class="sidebar-sticky">
+          <div class="list-group">
+            <a href="index.html" class="list-group-item active">پنل مدیریت</a>
+            <a href="category.html" class="list-group-item">مدیریت دسته ها اصلی</a>
+            <a href="sub-category.html" class="list-group-item">مدیریت ژانر ها</a>
+            <a href="author.html" class="list-group-item">مدیریت نویسندگان</a>
+            <a href="#" class="list-group-item">مدیریت محصولات</a>
+            <a href="#" class="list-group-item">تیکت ها</a>
+            <a href="#" class="list-group-item">انبار</a>
+            <a href="#" class="list-group-item">دسته بندی</a>
+            <a href="#" class="list-group-item">پیامک</a>
+            <a href="#" class="list-group-item">ارسالها</a>
+          </div>
+        </div>
+      </nav>
+      <!--/.sidebar-offcanvas-->
+
+      <div class="col-xs-12 col-sm-10">
+        <section class="bg-faded p-3 mt-1">
+          <div class="container">
+            <div class="row">
+              <div class="bg-faded col-xs-6 col-md-5">
+                <div class=" mt-2 mb-2">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4>ایجاد ژانر جدید</h4>
+                    </div>
+                    <div class="card-block">
+                      <form action="#">
+                        <div class="form-group">
+                          <label for="title" class="form-control-label">عنوان</label>
+                          <input type="text" class="form-control vazir-font"
+                            placeholder="لطفا عنوان ژانر را وارد نمایید...">
+                        </div>
+                        <div class="form-group">
+                          <label for="category" class="form-control-label">انتخاب دسته اصلی</label>
+                          <select name="" id="" class="form-control vazir-font">
+                            <option value="">کتاب خارجی</option>
+                            <option value="">کتاب درسی</option>
+                            <option value="">کتاب کمک آموزشی</option>
+                            <option value="">کتاب تاریخی</option>
+                            <option value="">علم برای همه</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="category" class="form-control-label">وضعیت ژانر</label>
+                          <select name="" id="" class="form-control vazir-font">
+                            <option value="">فعال</option>
+                            <option value="">غیرفعال</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <input type="checkbox" class="form-check-input">
+                          <label for="category" class="form-check-label mr-3">ژانر در منو قرار بگیرد</label>
+                        </div>
+                        <div class="form-group">
+                          <label for="content" class="form-control-label">توضیحات</label>
+                          <input name="editor" type="text" class="form-control vazir-font"
+                            placeholder="لطفا توضیحات این ژانر را وارد نمایید...">
+                        </div>
+                        <button class="btn btn-secondary vazir-font ml-3">پاک کردن فرم</button>
+                        <button class="btn btn-primary vazir-font pull-left">ایجاد ژانر</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-faded col-xs-6 col-md-7">
+                <div class=" mt-2 mb-2">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4>مدیریت ژانر ها</h4>
+                    </div>
+                    <div class="card-block">
+                      <section class="bg-faded py-1 mb-1" id="post-actions">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-group">
+                                <input type="text" class="form-control vazir-font" placeholder="جستجوی ژانر...">
+                                <button class="border btn btn-primary vazir-font">جستجو</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <table class="table table-striped table-sm table-responsive-sm text-center">
+                        <thead class="thead thead-inverse">
+                          <tr>
+                            <th class="text-center">#</th>
+                            <th class="text-center">عنوان</th>
+                            <th class="text-center">وضعیت</th>
+                            <th class="text-center">دسته</th>
+                            <th class="text-center">تعداد</th>
+                            <th class="text-center">منو</th>
+                            <th class="text-center">تاریخ انتشار</th>
+                            <th class="text-center"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>جنایی</td>
+                            <td>فعال</td>
+                            <td>ادبیات خارجی</td>
+                            <td>5</td>
+                            <td>قرار دارد</td>
+                            <td>97/4/24</td>
+                            <td>
+                              <a href="" class="btn btn-warning btn-sm">
+                                <i class="fa fa-edit"></i>
+                              </a>
+                              <a href="" class="btn btn-info btn-sm">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                              <a href="" class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>عاشقانه</td>
+                            <td>فعال</td>
+                            <td>ادبیات داخلی</td>
+                            <td>8</td>
+                            <td>قرار دارد</td>
+                            <td>97/4/24</td>
+                            <td>
+                              <a href="" class="btn btn-warning btn-sm">
+                                <i class="fa fa-edit"></i>
+                              </a>
+                              <a href="" class="btn btn-info btn-sm">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                              <a href="" class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>جنگ جهانی دوم</td>
+                            <td>فعال</td>
+                            <td>تاریخ جهان</td>
+                            <td>6</td>
+                            <td>قرار دارد</td>
+                            <td>97/4/24</td>
+                            <td>
+                              <a href="" class="btn btn-warning btn-sm">
+                                <i class="fa fa-edit"></i>
+                              </a>
+                              <a href="" class="btn btn-info btn-sm">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                              <a href="" class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>ادبیات سیاهان</td>
+                            <td>فعال</td>
+                            <td>ادبیات خارجی</td>
+                            <td>5</td>
+                            <td>قرار دارد</td>
+                            <td>97/4/24</td>
+                            <td>
+                              <a href="" class="btn btn-warning btn-sm">
+                                <i class="fa fa-edit"></i>
+                              </a>
+                              <a href="" class="btn btn-info btn-sm">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                              <a href="" class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>عرفان</td>
+                            <td>فعال</td>
+                            <td>دانشگاهی</td>
+                            <td>3</td>
+                            <td>قرار دارد</td>
+                            <td>97/4/24</td>
+                            <td>
+                              <a href="" class="btn btn-warning btn-sm">
+                                <i class="fa fa-edit"></i>
+                              </a>
+                              <a href="" class="btn btn-info btn-sm">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                              <a href="" class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>عرفان</td>
+                            <td>فعال</td>
+                            <td>دانشگاهی</td>
+                            <td>3</td>
+                            <td>قرار دارد</td>
+                            <td>97/4/24</td>
+                            <td>
+                              <a href="" class="btn btn-warning btn-sm">
+                                <i class="fa fa-edit"></i>
+                              </a>
+                              <a href="" class="btn btn-info btn-sm">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                              <a href="" class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>عرفان</td>
+                            <td>فعال</td>
+                            <td>دانشگاهی</td>
+                            <td>3</td>
+                            <td>قرار دارد</td>
+                            <td>97/4/24</td>
+                            <td>
+                              <a href="" class="btn btn-warning btn-sm">
+                                <i class="fa fa-edit"></i>
+                              </a>
+                              <a href="" class="btn btn-info btn-sm">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                              <a href="" class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                              </a>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                      <div class="row">
+                        <nav class="mt-4 mx-auto">
+                          <ul class="pagination">
+                            <li class="page-item">
+                              <a href="#" class="page-link">قبلی</a>
+                            </li>
+                            <li class="page-item active">
+                              <a href="#" class="page-link">1</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">2</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">3</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">بعدی</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--/row-->
+      </div>
+      <!--/.col-xs-12.col-sm-9-->
+
+    </div>
+    <!--/row-->
+
+    <hr>
+
+    <footer>
+      <p class="text-center">&copy; amin.shahnani@outlook.com</p>
+    </footer>
+
+  </div>
+  <!--/.container-->
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/feather.min.js"></script>
+  <script src="js/sweetalert.js"></script>
+  <script src="js/Chart.min.js"></script>
+  <script>
+    var ctx = document.getElementById("daily-chart");
+    var myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ["یکشبنه", "دوشنبه", "سه شنبه", "چهارشنبه", "پنجشنبه", "جمعه", "شنبه"],
+        datasets: [{
+          data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+          lineTension: 0,
+          backgroundColor: 'transparent',
+          borderColor: '#007bff',
+          borderWidth: 4,
+          pointBackgroundColor: '#007bff'
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: false
+            }
+          }]
+        },
+        legend: {
+          display: false,
+        }
+      }
+    });
+  </script>
+  <script>
+    var ctx = document.getElementById("monthly-chart");
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ["اسفند", "بهمن", "دی", "آذر", "آبان", "مهر", "شهریور", "مرداد", "تیر", "خرداد", "ادریبهشت", "فروردین"],
+        datasets: [{
+          data: [15339, 21345, 18483, 24003, 23489, 24092, 12034, 14586, 56952, 78485, 14526, 98965],
+          lineTension: 0,
+          backgroundColor: 'transparent',
+          borderColor: '#36a2eb',
+          borderWidth: 4,
+          pointBackgroundColor: '#007bff'
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: false
+            }
+          }]
+        },
+        legend: {
+          display: false,
+        }
+      }
+    });
+  </script>
+  <script src="js/offcanvas.js"></script>
+</body>
+
+</html>
